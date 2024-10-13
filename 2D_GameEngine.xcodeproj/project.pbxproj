@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F41E72B82CAF3B5600CCF92C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F41E72B72CAF3B5600CCF92C /* AppDelegate.m */; };
 		F41E72BA2CAF3B5700CCF92C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F41E72B92CAF3B5700CCF92C /* Assets.xcassets */; };
-		F41E72BD2CAF3B5700CCF92C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F41E72BC2CAF3B5700CCF92C /* Base */; };
-		F41E72BF2CAF3B5700CCF92C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F41E72BE2CAF3B5700CCF92C /* main.m */; };
 		F41E72CA2CAF3B5700CCF92C /* _D_GameEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F41E72C92CAF3B5700CCF92C /* _D_GameEngineTests.m */; };
 		F41E72D42CAF3B5700CCF92C /* _D_GameEngineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F41E72D32CAF3B5700CCF92C /* _D_GameEngineUITests.m */; };
 		F41E72D62CAF3B5700CCF92C /* _D_GameEngineUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F41E72D52CAF3B5700CCF92C /* _D_GameEngineUITestsLaunchTests.m */; };
+		F41E72E92CAF3C7300CCF92C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F41E72E82CAF3C7300CCF92C /* main.cpp */; };
+		F41E72EA2CAF3CE100CCF92C /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41E72E32CAF3BDD00CCF92C /* SDL2.framework */; };
+		F41E72EB2CAF3CE100CCF92C /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F41E72E32CAF3BDD00CCF92C /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F41E72EF2CAF54C500CCF92C /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F41E72ED2CAF54C500CCF92C /* Game.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,19 +34,33 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F41E72EC2CAF3CE100CCF92C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F41E72EB2CAF3CE100CCF92C /* SDL2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		F41E72B32CAF3B5600CCF92C /* 2D_GameEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2D_GameEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F41E72B62CAF3B5600CCF92C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		F41E72B72CAF3B5600CCF92C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F41E72B92CAF3B5700CCF92C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F41E72BC2CAF3B5700CCF92C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		F41E72BE2CAF3B5700CCF92C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F41E72C02CAF3B5700CCF92C /* _D_GameEngine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = _D_GameEngine.entitlements; sourceTree = "<group>"; };
 		F41E72C52CAF3B5700CCF92C /* 2D_GameEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2D_GameEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F41E72C92CAF3B5700CCF92C /* _D_GameEngineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _D_GameEngineTests.m; sourceTree = "<group>"; };
 		F41E72CF2CAF3B5700CCF92C /* 2D_GameEngineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2D_GameEngineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F41E72D32CAF3B5700CCF92C /* _D_GameEngineUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _D_GameEngineUITests.m; sourceTree = "<group>"; };
 		F41E72D52CAF3B5700CCF92C /* _D_GameEngineUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _D_GameEngineUITestsLaunchTests.m; sourceTree = "<group>"; };
+		F41E72E32CAF3BDD00CCF92C /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		F41E72E82CAF3C7300CCF92C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F41E72ED2CAF54C500CCF92C /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		F41E72EE2CAF54C500CCF92C /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41E72EA2CAF3CE100CCF92C /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +96,7 @@
 				F41E72C82CAF3B5700CCF92C /* 2D_GameEngineTests */,
 				F41E72D22CAF3B5700CCF92C /* 2D_GameEngineUITests */,
 				F41E72B42CAF3B5600CCF92C /* Products */,
+				F41E72E22CAF3BDD00CCF92C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,12 +113,11 @@
 		F41E72B52CAF3B5600CCF92C /* 2D_GameEngine */ = {
 			isa = PBXGroup;
 			children = (
-				F41E72B62CAF3B5600CCF92C /* AppDelegate.h */,
-				F41E72B72CAF3B5600CCF92C /* AppDelegate.m */,
 				F41E72B92CAF3B5700CCF92C /* Assets.xcassets */,
-				F41E72BB2CAF3B5700CCF92C /* MainMenu.xib */,
-				F41E72BE2CAF3B5700CCF92C /* main.m */,
 				F41E72C02CAF3B5700CCF92C /* _D_GameEngine.entitlements */,
+				F41E72E82CAF3C7300CCF92C /* main.cpp */,
+				F41E72ED2CAF54C500CCF92C /* Game.cpp */,
+				F41E72EE2CAF54C500CCF92C /* Game.hpp */,
 			);
 			path = 2D_GameEngine;
 			sourceTree = "<group>";
@@ -123,6 +139,14 @@
 			path = 2D_GameEngineUITests;
 			sourceTree = "<group>";
 		};
+		F41E72E22CAF3BDD00CCF92C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F41E72E32CAF3BDD00CCF92C /* SDL2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,6 +157,7 @@
 				F41E72AF2CAF3B5600CCF92C /* Sources */,
 				F41E72B02CAF3B5600CCF92C /* Frameworks */,
 				F41E72B12CAF3B5600CCF92C /* Resources */,
+				F41E72EC2CAF3CE100CCF92C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,7 +252,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F41E72BA2CAF3B5700CCF92C /* Assets.xcassets in Resources */,
-				F41E72BD2CAF3B5700CCF92C /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,8 +276,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F41E72BF2CAF3B5700CCF92C /* main.m in Sources */,
-				F41E72B82CAF3B5600CCF92C /* AppDelegate.m in Sources */,
+				F41E72E92CAF3C7300CCF92C /* main.cpp in Sources */,
+				F41E72EF2CAF54C500CCF92C /* Game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,17 +312,6 @@
 			targetProxy = F41E72D02CAF3B5700CCF92C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F41E72BB2CAF3B5700CCF92C /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F41E72BC2CAF3B5700CCF92C /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F41E72D72CAF3B5700CCF92C /* Debug */ = {
@@ -425,6 +438,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
@@ -449,6 +466,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
