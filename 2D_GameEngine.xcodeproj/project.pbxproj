@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F41E72BA2CAF3B5700CCF92C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F41E72B92CAF3B5700CCF92C /* Assets.xcassets */; };
 		F41E72CA2CAF3B5700CCF92C /* _D_GameEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F41E72C92CAF3B5700CCF92C /* _D_GameEngineTests.m */; };
 		F41E72D42CAF3B5700CCF92C /* _D_GameEngineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F41E72D32CAF3B5700CCF92C /* _D_GameEngineUITests.m */; };
 		F41E72D62CAF3B5700CCF92C /* _D_GameEngineUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F41E72D52CAF3B5700CCF92C /* _D_GameEngineUITestsLaunchTests.m */; };
@@ -15,6 +14,9 @@
 		F41E72EA2CAF3CE100CCF92C /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41E72E32CAF3BDD00CCF92C /* SDL2.framework */; };
 		F41E72EB2CAF3CE100CCF92C /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F41E72E32CAF3BDD00CCF92C /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F41E72EF2CAF54C500CCF92C /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F41E72ED2CAF54C500CCF92C /* Game.cpp */; };
+		F4F068882CC8C76900C0D399 /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = F4F068872CC8C76900C0D399 /* player.png */; };
+		F4F068912CCAEB9200C0D399 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F0688F2CCAEB3800C0D399 /* SDL2_image.framework */; };
+		F4F068922CCAEB9200C0D399 /* SDL2_image.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4F0688F2CCAEB3800C0D399 /* SDL2_image.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				F41E72EB2CAF3CE100CCF92C /* SDL2.framework in Embed Frameworks */,
+				F4F068922CCAEB9200C0D399 /* SDL2_image.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,7 +53,6 @@
 
 /* Begin PBXFileReference section */
 		F41E72B32CAF3B5600CCF92C /* 2D_GameEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2D_GameEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F41E72B92CAF3B5700CCF92C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F41E72C02CAF3B5700CCF92C /* _D_GameEngine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = _D_GameEngine.entitlements; sourceTree = "<group>"; };
 		F41E72C52CAF3B5700CCF92C /* 2D_GameEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2D_GameEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F41E72C92CAF3B5700CCF92C /* _D_GameEngineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _D_GameEngineTests.m; sourceTree = "<group>"; };
@@ -61,6 +63,9 @@
 		F41E72E82CAF3C7300CCF92C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F41E72ED2CAF54C500CCF92C /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
 		F41E72EE2CAF54C500CCF92C /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		F4F068872CC8C76900C0D399 /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
+		F4F0688C2CC8CCB600C0D399 /* SDL_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDL_image.h; sourceTree = "<group>"; };
+		F4F0688F2CCAEB3800C0D399 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F41E72EA2CAF3CE100CCF92C /* SDL2.framework in Frameworks */,
+				F4F068912CCAEB9200C0D399 /* SDL2_image.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +119,7 @@
 		F41E72B52CAF3B5600CCF92C /* 2D_GameEngine */ = {
 			isa = PBXGroup;
 			children = (
-				F41E72B92CAF3B5700CCF92C /* Assets.xcassets */,
+				F4F0688B2CC8C7D900C0D399 /* Assets */,
 				F41E72C02CAF3B5700CCF92C /* _D_GameEngine.entitlements */,
 				F41E72E82CAF3C7300CCF92C /* main.cpp */,
 				F41E72ED2CAF54C500CCF92C /* Game.cpp */,
@@ -142,9 +148,28 @@
 		F41E72E22CAF3BDD00CCF92C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F4F0688F2CCAEB3800C0D399 /* SDL2_image.framework */,
+				F4F0688D2CC8CCB600C0D399 /* include */,
 				F41E72E32CAF3BDD00CCF92C /* SDL2.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4F0688B2CC8C7D900C0D399 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F4F068872CC8C76900C0D399 /* player.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		F4F0688D2CC8CCB600C0D399 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				F4F0688C2CC8CCB600C0D399 /* SDL_image.h */,
+			);
+			name = include;
+			path = "../Dev/SDL2_image-2.0.1/include";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,7 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F41E72BA2CAF3B5700CCF92C /* Assets.xcassets in Resources */,
+				F4F068882CC8C76900C0D399 /* player.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +468,7 @@
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "/Users/josueacevedo/Projects/classroom/Dev/SDL2_image-2.0.1";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -471,6 +497,7 @@
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "/Users/josueacevedo/Projects/classroom/Dev/SDL2_image-2.0.1";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
