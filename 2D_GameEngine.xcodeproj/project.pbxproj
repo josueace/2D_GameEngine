@@ -17,6 +17,7 @@
 		F4F068882CC8C76900C0D399 /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = F4F068872CC8C76900C0D399 /* player.png */; };
 		F4F068912CCAEB9200C0D399 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F0688F2CCAEB3800C0D399 /* SDL2_image.framework */; };
 		F4F068922CCAEB9200C0D399 /* SDL2_image.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4F0688F2CCAEB3800C0D399 /* SDL2_image.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F4F068962CD34C2800C0D399 /* TextureManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4F068942CD34C2800C0D399 /* TextureManager.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		F4F068872CC8C76900C0D399 /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
 		F4F0688C2CC8CCB600C0D399 /* SDL_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDL_image.h; sourceTree = "<group>"; };
 		F4F0688F2CCAEB3800C0D399 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
+		F4F068932CD34B7200C0D399 /* TextureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureManager.h; sourceTree = "<group>"; };
+		F4F068942CD34C2800C0D399 /* TextureManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextureManager.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				F41E72E82CAF3C7300CCF92C /* main.cpp */,
 				F41E72ED2CAF54C500CCF92C /* Game.cpp */,
 				F41E72EE2CAF54C500CCF92C /* Game.hpp */,
+				F4F068932CD34B7200C0D399 /* TextureManager.h */,
+				F4F068942CD34C2800C0D399 /* TextureManager.cpp */,
 			);
 			path = 2D_GameEngine;
 			sourceTree = "<group>";
@@ -303,6 +308,7 @@
 			files = (
 				F41E72E92CAF3C7300CCF92C /* main.cpp in Sources */,
 				F41E72EF2CAF54C500CCF92C /* Game.cpp in Sources */,
+				F4F068962CD34C2800C0D399 /* TextureManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
