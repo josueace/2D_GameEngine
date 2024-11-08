@@ -18,6 +18,8 @@
 		F4F068912CCAEB9200C0D399 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F0688F2CCAEB3800C0D399 /* SDL2_image.framework */; };
 		F4F068922CCAEB9200C0D399 /* SDL2_image.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4F0688F2CCAEB3800C0D399 /* SDL2_image.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F4F068962CD34C2800C0D399 /* TextureManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4F068942CD34C2800C0D399 /* TextureManager.cpp */; };
+		F4F0689A2CDDE2E600C0D399 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4F068992CDDE2E600C0D399 /* GameObject.cpp */; };
+		F4F0689C2CDE8ACC00C0D399 /* classmate.png in Resources */ = {isa = PBXBuildFile; fileRef = F4F0689B2CDE8ACC00C0D399 /* classmate.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,9 @@
 		F4F0688F2CCAEB3800C0D399 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
 		F4F068932CD34B7200C0D399 /* TextureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureManager.h; sourceTree = "<group>"; };
 		F4F068942CD34C2800C0D399 /* TextureManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextureManager.cpp; sourceTree = "<group>"; };
+		F4F068972CDDE0C000C0D399 /* GameObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
+		F4F068992CDDE2E600C0D399 /* GameObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
+		F4F0689B2CDE8ACC00C0D399 /* classmate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = classmate.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,13 +127,9 @@
 		F41E72B52CAF3B5600CCF92C /* 2D_GameEngine */ = {
 			isa = PBXGroup;
 			children = (
+				F4F068982CDDE0CC00C0D399 /* Src */,
 				F4F0688B2CC8C7D900C0D399 /* Assets */,
 				F41E72C02CAF3B5700CCF92C /* _D_GameEngine.entitlements */,
-				F41E72E82CAF3C7300CCF92C /* main.cpp */,
-				F41E72ED2CAF54C500CCF92C /* Game.cpp */,
-				F41E72EE2CAF54C500CCF92C /* Game.hpp */,
-				F4F068932CD34B7200C0D399 /* TextureManager.h */,
-				F4F068942CD34C2800C0D399 /* TextureManager.cpp */,
 			);
 			path = 2D_GameEngine;
 			sourceTree = "<group>";
@@ -163,6 +164,7 @@
 		F4F0688B2CC8C7D900C0D399 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F4F0689B2CDE8ACC00C0D399 /* classmate.png */,
 				F4F068872CC8C76900C0D399 /* player.png */,
 			);
 			path = Assets;
@@ -175,6 +177,20 @@
 			);
 			name = include;
 			path = "../Dev/SDL2_image-2.0.1/include";
+			sourceTree = "<group>";
+		};
+		F4F068982CDDE0CC00C0D399 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				F41E72E82CAF3C7300CCF92C /* main.cpp */,
+				F41E72ED2CAF54C500CCF92C /* Game.cpp */,
+				F41E72EE2CAF54C500CCF92C /* Game.hpp */,
+				F4F068932CD34B7200C0D399 /* TextureManager.h */,
+				F4F068942CD34C2800C0D399 /* TextureManager.cpp */,
+				F4F068972CDDE0C000C0D399 /* GameObject.h */,
+				F4F068992CDDE2E600C0D399 /* GameObject.cpp */,
+			);
+			path = Src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4F068882CC8C76900C0D399 /* player.png in Resources */,
+				F4F0689C2CDE8ACC00C0D399 /* classmate.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4F0689A2CDDE2E600C0D399 /* GameObject.cpp in Sources */,
 				F41E72E92CAF3C7300CCF92C /* main.cpp in Sources */,
 				F41E72EF2CAF54C500CCF92C /* Game.cpp in Sources */,
 				F4F068962CD34C2800C0D399 /* TextureManager.cpp in Sources */,
