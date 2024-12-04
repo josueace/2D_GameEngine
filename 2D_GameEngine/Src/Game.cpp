@@ -3,11 +3,17 @@
 #include "GameObject.h"
 #include "Map.h"
 
-GameObject* player;
-GameObject* classmate;
+#include "ECS.h"
+#include "Components.h"
+#include "Vector2D.h"
+
+
 Map* map;
 
 SDL_Renderer* Game::renderer = nullptr;
+
+Manager manager;
+auto& player(manager.addEntity());
 
 Game::Game()
 {}
@@ -43,9 +49,11 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height, bo
         isRunning = false;
     }
     
-    player = new GameObject("player.png",0,0);
-    classmate = new GameObject("classmate.png",50,50);
     map = new Map();
+    
+    player.addComponent<TransformComponent>();
+    player.addComponent<SpriteComponent>("player.png");
+   
 }
 
 void Game::handleEvents()
@@ -63,16 +71,21 @@ void Game::handleEvents()
 
 void Game::update()
 {
-    player->Update();
-    classmate->Update();
+    manager.refresh();
+    manager.update();
+    player.getComponent<TransformComponent>().position.Add(Vector2D(5,0));
+    
+    if(player.getComponent<TransformComponent>().position.x > 100)
+    {
+        player.getComponent<SpriteComponent>().setTex("classmate.png");
+    }
 }
 void Game::render()
 {
     SDL_RenderClear(renderer);
     // this is where we add stuff to render
     map->DrawMap();
-    player->Render();
-    classmate->Render();
+    manager.draw();
     SDL_RenderPresent(renderer);
 }
 void Game::clean()
