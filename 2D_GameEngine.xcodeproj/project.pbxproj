@@ -90,6 +90,7 @@
 		F4F068AA2CEBF02C00C0D399 /* TransformComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransformComponent.h; sourceTree = "<group>"; };
 		F4F068AB2D003D2200C0D399 /* Vector2D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vector2D.h; sourceTree = "<group>"; };
 		F4F068AC2D003EBE00C0D399 /* Vector2D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vector2D.cpp; sourceTree = "<group>"; };
+		F4F068AF2D09876D00C0D399 /* KeyboardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +225,7 @@
 				F4F068A72CE6AC4300C0D399 /* Components.h */,
 				F4F068A92CEBEFBF00C0D399 /* SpriteComponent.h */,
 				F4F068AA2CEBF02C00C0D399 /* TransformComponent.h */,
+				F4F068AF2D09876D00C0D399 /* KeyboardController.h */,
 			);
 			path = ECS;
 			sourceTree = "<group>";
