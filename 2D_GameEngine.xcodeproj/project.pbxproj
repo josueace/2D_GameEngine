@@ -25,6 +25,7 @@
 		F4F068A32CE4208400C0D399 /* grass.png in Resources */ = {isa = PBXBuildFile; fileRef = F4F068A22CE4208400C0D399 /* grass.png */; };
 		F4F068A52CE420D300C0D399 /* dirt.png in Resources */ = {isa = PBXBuildFile; fileRef = F4F068A42CE420D300C0D399 /* dirt.png */; };
 		F4F068AD2D003EBE00C0D399 /* Vector2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4F068AC2D003EBE00C0D399 /* Vector2D.cpp */; };
+		F4F068B72D164F1F00C0D399 /* Collision.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4F068B62D164F1F00C0D399 /* Collision.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,9 @@
 		F4F068AB2D003D2200C0D399 /* Vector2D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vector2D.h; sourceTree = "<group>"; };
 		F4F068AC2D003EBE00C0D399 /* Vector2D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vector2D.cpp; sourceTree = "<group>"; };
 		F4F068AF2D09876D00C0D399 /* KeyboardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardController.h; sourceTree = "<group>"; };
+		F4F068B42D16461E00C0D399 /* ColliderComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColliderComponent.h; sourceTree = "<group>"; };
+		F4F068B52D164E7100C0D399 /* Collision.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Collision.h; sourceTree = "<group>"; };
+		F4F068B62D164F1F00C0D399 /* Collision.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Collision.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +218,8 @@
 				F4F0689E2CDF10B800C0D399 /* Map.cpp */,
 				F4F068AB2D003D2200C0D399 /* Vector2D.h */,
 				F4F068AC2D003EBE00C0D399 /* Vector2D.cpp */,
+				F4F068B52D164E7100C0D399 /* Collision.h */,
+				F4F068B62D164F1F00C0D399 /* Collision.cpp */,
 			);
 			path = Src;
 			sourceTree = "<group>";
@@ -226,6 +232,7 @@
 				F4F068A92CEBEFBF00C0D399 /* SpriteComponent.h */,
 				F4F068AA2CEBF02C00C0D399 /* TransformComponent.h */,
 				F4F068AF2D09876D00C0D399 /* KeyboardController.h */,
+				F4F068B42D16461E00C0D399 /* ColliderComponent.h */,
 			);
 			path = ECS;
 			sourceTree = "<group>";
@@ -363,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4F068B72D164F1F00C0D399 /* Collision.cpp in Sources */,
 				F4F0689A2CDDE2E600C0D399 /* GameObject.cpp in Sources */,
 				F4F0689F2CDF10B800C0D399 /* Map.cpp in Sources */,
 				F4F068AD2D003EBE00C0D399 /* Vector2D.cpp in Sources */,
