@@ -1,8 +1,8 @@
-#pragma once
+
 #include "ECS.h"
 #include "TransformComponent.h"
 #include "SpriteComponent.h"
-#include "SDL2/SDL.h"
+
 
 class TileComponent : public Component
 {
@@ -41,6 +41,10 @@ public:
     }
     void init() override
     {
+        entity->addComponent<TransformComponent>((float)tileRect.x, (float)tileRect.y, tileRect.w, tileRect.h, 1);
+        transform = &entity->getComponent<TransformComponent>();
         
+        entity->addComponent<SpriteComponent>(path);
+        sprite = &entity->getComponent<SpriteComponent>();
     }
 };

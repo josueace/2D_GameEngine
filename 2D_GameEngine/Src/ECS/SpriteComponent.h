@@ -2,7 +2,7 @@
 
 #include "Components.h"
 #include "SDL2/SDL.h"
-//#include "../TextureManager.h"
+#include "../TextureManager.h"
 
 class SpriteComponent : public Component
 {
