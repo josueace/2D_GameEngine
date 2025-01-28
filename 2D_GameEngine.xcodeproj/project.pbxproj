@@ -14,6 +14,7 @@
 		F41E72EA2CAF3CE100CCF92C /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41E72E32CAF3BDD00CCF92C /* SDL2.framework */; };
 		F41E72EB2CAF3CE100CCF92C /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F41E72E32CAF3BDD00CCF92C /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F41E72EF2CAF54C500CCF92C /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F41E72ED2CAF54C500CCF92C /* Game.cpp */; };
+		F4944A172D48557E00D654E0 /* p16x16.map in Resources */ = {isa = PBXBuildFile; fileRef = F4944A162D48557E00D654E0 /* p16x16.map */; };
 		F4F068882CC8C76900C0D399 /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = F4F068872CC8C76900C0D399 /* player.png */; };
 		F4F068912CCAEB9200C0D399 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F0688F2CCAEB3800C0D399 /* SDL2_image.framework */; };
 		F4F068922CCAEB9200C0D399 /* SDL2_image.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4F0688F2CCAEB3800C0D399 /* SDL2_image.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -72,6 +73,7 @@
 		F41E72E82CAF3C7300CCF92C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F41E72ED2CAF54C500CCF92C /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
 		F41E72EE2CAF54C500CCF92C /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		F4944A162D48557E00D654E0 /* p16x16.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = p16x16.map; sourceTree = "<group>"; };
 		F4F068872CC8C76900C0D399 /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
 		F4F0688C2CC8CCB600C0D399 /* SDL_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDL_image.h; sourceTree = "<group>"; };
 		F4F0688F2CCAEB3800C0D399 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 		F4F0688B2CC8C7D900C0D399 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F4944A162D48557E00D654E0 /* p16x16.map */,
 				F4F068A42CE420D300C0D399 /* dirt.png */,
 				F4F068A22CE4208400C0D399 /* grass.png */,
 				F4F068A02CE4204600C0D399 /* water.png */,
@@ -347,6 +350,7 @@
 				F4F068A52CE420D300C0D399 /* dirt.png in Resources */,
 				F4F068882CC8C76900C0D399 /* player.png in Resources */,
 				F4F0689C2CDE8ACC00C0D399 /* classmate.png in Resources */,
+				F4944A172D48557E00D654E0 /* p16x16.map in Resources */,
 				F4F068A12CE4204600C0D399 /* water.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
