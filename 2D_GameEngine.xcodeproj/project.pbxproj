@@ -15,6 +15,7 @@
 		F41E72EB2CAF3CE100CCF92C /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F41E72E32CAF3BDD00CCF92C /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F41E72EF2CAF54C500CCF92C /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F41E72ED2CAF54C500CCF92C /* Game.cpp */; };
 		F4944A172D48557E00D654E0 /* p16x16.map in Resources */ = {isa = PBXBuildFile; fileRef = F4944A162D48557E00D654E0 /* p16x16.map */; };
+		F4944A192D498BD800D654E0 /* ECS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4944A182D498BD800D654E0 /* ECS.cpp */; };
 		F4F068882CC8C76900C0D399 /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = F4F068872CC8C76900C0D399 /* player.png */; };
 		F4F068912CCAEB9200C0D399 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F0688F2CCAEB3800C0D399 /* SDL2_image.framework */; };
 		F4F068922CCAEB9200C0D399 /* SDL2_image.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4F0688F2CCAEB3800C0D399 /* SDL2_image.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -74,6 +75,7 @@
 		F41E72ED2CAF54C500CCF92C /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
 		F41E72EE2CAF54C500CCF92C /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
 		F4944A162D48557E00D654E0 /* p16x16.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = p16x16.map; sourceTree = "<group>"; };
+		F4944A182D498BD800D654E0 /* ECS.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ECS.cpp; sourceTree = "<group>"; };
 		F4F068872CC8C76900C0D399 /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
 		F4F0688C2CC8CCB600C0D399 /* SDL_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDL_image.h; sourceTree = "<group>"; };
 		F4F0688F2CCAEB3800C0D399 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 				F4F068AF2D09876D00C0D399 /* KeyboardController.h */,
 				F4F068B42D16461E00C0D399 /* ColliderComponent.h */,
 				F4F068B82D1B4A6E00C0D399 /* TileComponent.h */,
+				F4944A182D498BD800D654E0 /* ECS.cpp */,
 			);
 			path = ECS;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				F4F068B72D164F1F00C0D399 /* Collision.cpp in Sources */,
 				F4F0689A2CDDE2E600C0D399 /* GameObject.cpp in Sources */,
 				F4F0689F2CDF10B800C0D399 /* Map.cpp in Sources */,
+				F4944A192D498BD800D654E0 /* ECS.cpp in Sources */,
 				F4F068AD2D003EBE00C0D399 /* Vector2D.cpp in Sources */,
 				F41E72E92CAF3C7300CCF92C /* main.cpp in Sources */,
 				F41E72EF2CAF54C500CCF92C /* Game.cpp in Sources */,
