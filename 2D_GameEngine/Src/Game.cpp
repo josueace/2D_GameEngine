@@ -69,7 +69,7 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height, bo
     
     map = new Map();
     
-    Map::LoadMap("p16x16.map",16,16);
+    Map::LoadMap("assets/p16x16.map",16,16);
     
     player.addComponent<TransformComponent>(2);
     player.addComponent<SpriteComponent>("player.png");
