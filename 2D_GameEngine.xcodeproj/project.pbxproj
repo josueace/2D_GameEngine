@@ -14,6 +14,7 @@
 		F41E72EA2CAF3CE100CCF92C /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41E72E32CAF3BDD00CCF92C /* SDL2.framework */; };
 		F41E72EB2CAF3CE100CCF92C /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F41E72E32CAF3BDD00CCF92C /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F41E72EF2CAF54C500CCF92C /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F41E72ED2CAF54C500CCF92C /* Game.cpp */; };
+		F44383FE2D77B88D0032C7AE /* player_idle.png in Resources */ = {isa = PBXBuildFile; fileRef = F44383FD2D77B88D0032C7AE /* player_idle.png */; };
 		F459FCEC2D56C3AC00A548A2 /* water.png in Resources */ = {isa = PBXBuildFile; fileRef = F459FCEB2D56C3AC00A548A2 /* water.png */; };
 		F459FCEE2D56C3B700A548A2 /* dirt.png in Resources */ = {isa = PBXBuildFile; fileRef = F459FCED2D56C3B700A548A2 /* dirt.png */; };
 		F459FCF02D56C3C500A548A2 /* grass.png in Resources */ = {isa = PBXBuildFile; fileRef = F459FCEF2D56C3C500A548A2 /* grass.png */; };
@@ -75,6 +76,7 @@
 		F41E72ED2CAF54C500CCF92C /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
 		F41E72EE2CAF54C500CCF92C /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
 		F44383FC2D76BC780032C7AE /* p16x16.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = p16x16.map; path = 2D_GameEngine/Assets/p16x16.map; sourceTree = "<group>"; };
+		F44383FD2D77B88D0032C7AE /* player_idle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player_idle.png; sourceTree = "<group>"; };
 		F459FCEB2D56C3AC00A548A2 /* water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = water.png; sourceTree = "<group>"; };
 		F459FCED2D56C3B700A548A2 /* dirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dirt.png; sourceTree = "<group>"; };
 		F459FCEF2D56C3C500A548A2 /* grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass.png; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 		F4F0688B2CC8C7D900C0D399 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F44383FD2D77B88D0032C7AE /* player_idle.png */,
 				F4944A162D48557E00D654E0 /* p16x16.map */,
 				F459FCEF2D56C3C500A548A2 /* grass.png */,
 				F459FCED2D56C3B700A548A2 /* dirt.png */,
@@ -355,6 +358,7 @@
 				F4F068882CC8C76900C0D399 /* player.png in Resources */,
 				F459FCF02D56C3C500A548A2 /* grass.png in Resources */,
 				F4F0689C2CDE8ACC00C0D399 /* classmate.png in Resources */,
+				F44383FE2D77B88D0032C7AE /* player_idle.png in Resources */,
 				F459FCEE2D56C3B700A548A2 /* dirt.png in Resources */,
 				F459FCEC2D56C3AC00A548A2 /* water.png in Resources */,
 			);
