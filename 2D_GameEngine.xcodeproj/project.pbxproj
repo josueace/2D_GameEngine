@@ -74,6 +74,7 @@
 		F41E72E82CAF3C7300CCF92C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F41E72ED2CAF54C500CCF92C /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
 		F41E72EE2CAF54C500CCF92C /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		F44383FC2D76BC780032C7AE /* p16x16.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = p16x16.map; path = 2D_GameEngine/Assets/p16x16.map; sourceTree = "<group>"; };
 		F459FCEB2D56C3AC00A548A2 /* water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = water.png; sourceTree = "<group>"; };
 		F459FCED2D56C3B700A548A2 /* dirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dirt.png; sourceTree = "<group>"; };
 		F459FCEF2D56C3C500A548A2 /* grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass.png; sourceTree = "<group>"; };
@@ -132,6 +133,7 @@
 		F41E72AA2CAF3B5600CCF92C = {
 			isa = PBXGroup;
 			children = (
+				F44383FC2D76BC780032C7AE /* p16x16.map */,
 				F41E72B52CAF3B5600CCF92C /* 2D_GameEngine */,
 				F41E72C82CAF3B5700CCF92C /* 2D_GameEngineTests */,
 				F41E72D22CAF3B5700CCF92C /* 2D_GameEngineUITests */,
@@ -349,10 +351,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4944A172D48557E00D654E0 /* p16x16.map in Resources */,
 				F4F068882CC8C76900C0D399 /* player.png in Resources */,
 				F459FCF02D56C3C500A548A2 /* grass.png in Resources */,
 				F4F0689C2CDE8ACC00C0D399 /* classmate.png in Resources */,
-				F4944A172D48557E00D654E0 /* p16x16.map in Resources */,
 				F459FCEE2D56C3B700A548A2 /* dirt.png in Resources */,
 				F459FCEC2D56C3AC00A548A2 /* water.png in Resources */,
 			);
