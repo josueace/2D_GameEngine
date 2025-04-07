@@ -14,19 +14,14 @@
 		F41E72EA2CAF3CE100CCF92C /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41E72E32CAF3BDD00CCF92C /* SDL2.framework */; };
 		F41E72EB2CAF3CE100CCF92C /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F41E72E32CAF3BDD00CCF92C /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F41E72EF2CAF54C500CCF92C /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F41E72ED2CAF54C500CCF92C /* Game.cpp */; };
-		F44383FE2D77B88D0032C7AE /* player_idle.png in Resources */ = {isa = PBXBuildFile; fileRef = F44383FD2D77B88D0032C7AE /* player_idle.png */; };
 		F44384002D7A53020032C7AE /* player_anims.png in Resources */ = {isa = PBXBuildFile; fileRef = F44383FF2D7A53020032C7AE /* player_anims.png */; };
-		F459FCEC2D56C3AC00A548A2 /* water.png in Resources */ = {isa = PBXBuildFile; fileRef = F459FCEB2D56C3AC00A548A2 /* water.png */; };
-		F459FCEE2D56C3B700A548A2 /* dirt.png in Resources */ = {isa = PBXBuildFile; fileRef = F459FCED2D56C3B700A548A2 /* dirt.png */; };
-		F459FCF02D56C3C500A548A2 /* grass.png in Resources */ = {isa = PBXBuildFile; fileRef = F459FCEF2D56C3C500A548A2 /* grass.png */; };
-		F4944A172D48557E00D654E0 /* p16x16.map in Resources */ = {isa = PBXBuildFile; fileRef = F4944A162D48557E00D654E0 /* p16x16.map */; };
+		F480E7492D9B50690037E26C /* terrain_ss.png in Resources */ = {isa = PBXBuildFile; fileRef = F480E7482D9B50690037E26C /* terrain_ss.png */; };
+		F480E74B2D9B50750037E26C /* map.map in Resources */ = {isa = PBXBuildFile; fileRef = F480E74A2D9B50740037E26C /* map.map */; };
 		F4944A192D498BD800D654E0 /* ECS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4944A182D498BD800D654E0 /* ECS.cpp */; };
-		F4F068882CC8C76900C0D399 /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = F4F068872CC8C76900C0D399 /* player.png */; };
 		F4F068912CCAEB9200C0D399 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F0688F2CCAEB3800C0D399 /* SDL2_image.framework */; };
 		F4F068922CCAEB9200C0D399 /* SDL2_image.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4F0688F2CCAEB3800C0D399 /* SDL2_image.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F4F068962CD34C2800C0D399 /* TextureManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4F068942CD34C2800C0D399 /* TextureManager.cpp */; };
 		F4F0689A2CDDE2E600C0D399 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4F068992CDDE2E600C0D399 /* GameObject.cpp */; };
-		F4F0689C2CDE8ACC00C0D399 /* classmate.png in Resources */ = {isa = PBXBuildFile; fileRef = F4F0689B2CDE8ACC00C0D399 /* classmate.png */; };
 		F4F0689F2CDF10B800C0D399 /* Map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4F0689E2CDF10B800C0D399 /* Map.cpp */; };
 		F4F068AD2D003EBE00C0D399 /* Vector2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4F068AC2D003EBE00C0D399 /* Vector2D.cpp */; };
 		F4F068B72D164F1F00C0D399 /* Collision.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4F068B62D164F1F00C0D399 /* Collision.cpp */; };
@@ -76,23 +71,17 @@
 		F41E72E82CAF3C7300CCF92C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F41E72ED2CAF54C500CCF92C /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
 		F41E72EE2CAF54C500CCF92C /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
-		F44383FC2D76BC780032C7AE /* p16x16.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = p16x16.map; path = 2D_GameEngine/Assets/p16x16.map; sourceTree = "<group>"; };
-		F44383FD2D77B88D0032C7AE /* player_idle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player_idle.png; sourceTree = "<group>"; };
 		F44383FF2D7A53020032C7AE /* player_anims.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player_anims.png; sourceTree = "<group>"; };
 		F44384012D7A535A0032C7AE /* Animation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animation.h; sourceTree = "<group>"; };
-		F459FCEB2D56C3AC00A548A2 /* water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = water.png; sourceTree = "<group>"; };
-		F459FCED2D56C3B700A548A2 /* dirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dirt.png; sourceTree = "<group>"; };
-		F459FCEF2D56C3C500A548A2 /* grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass.png; sourceTree = "<group>"; };
-		F4944A162D48557E00D654E0 /* p16x16.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = p16x16.map; sourceTree = "<group>"; };
+		F480E7482D9B50690037E26C /* terrain_ss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = terrain_ss.png; sourceTree = "<group>"; };
+		F480E74A2D9B50740037E26C /* map.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = map.map; sourceTree = "<group>"; };
 		F4944A182D498BD800D654E0 /* ECS.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ECS.cpp; sourceTree = "<group>"; };
-		F4F068872CC8C76900C0D399 /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
 		F4F0688C2CC8CCB600C0D399 /* SDL_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDL_image.h; sourceTree = "<group>"; };
 		F4F0688F2CCAEB3800C0D399 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
 		F4F068932CD34B7200C0D399 /* TextureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureManager.h; sourceTree = "<group>"; };
 		F4F068942CD34C2800C0D399 /* TextureManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextureManager.cpp; sourceTree = "<group>"; };
 		F4F068972CDDE0C000C0D399 /* GameObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
 		F4F068992CDDE2E600C0D399 /* GameObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
-		F4F0689B2CDE8ACC00C0D399 /* classmate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = classmate.png; sourceTree = "<group>"; };
 		F4F0689D2CDF0FD400C0D399 /* Map.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
 		F4F0689E2CDF10B800C0D399 /* Map.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Map.cpp; sourceTree = "<group>"; };
 		F4F068A62CE557C900C0D399 /* ECS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECS.h; sourceTree = "<group>"; };
@@ -138,7 +127,6 @@
 		F41E72AA2CAF3B5600CCF92C = {
 			isa = PBXGroup;
 			children = (
-				F44383FC2D76BC780032C7AE /* p16x16.map */,
 				F41E72B52CAF3B5600CCF92C /* 2D_GameEngine */,
 				F41E72C82CAF3B5700CCF92C /* 2D_GameEngineTests */,
 				F41E72D22CAF3B5700CCF92C /* 2D_GameEngineUITests */,
@@ -197,14 +185,9 @@
 		F4F0688B2CC8C7D900C0D399 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F480E74A2D9B50740037E26C /* map.map */,
+				F480E7482D9B50690037E26C /* terrain_ss.png */,
 				F44383FF2D7A53020032C7AE /* player_anims.png */,
-				F44383FD2D77B88D0032C7AE /* player_idle.png */,
-				F4944A162D48557E00D654E0 /* p16x16.map */,
-				F459FCEF2D56C3C500A548A2 /* grass.png */,
-				F459FCED2D56C3B700A548A2 /* dirt.png */,
-				F459FCEB2D56C3AC00A548A2 /* water.png */,
-				F4F0689B2CDE8ACC00C0D399 /* classmate.png */,
-				F4F068872CC8C76900C0D399 /* player.png */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -359,13 +342,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4944A172D48557E00D654E0 /* p16x16.map in Resources */,
-				F4F068882CC8C76900C0D399 /* player.png in Resources */,
-				F459FCF02D56C3C500A548A2 /* grass.png in Resources */,
-				F4F0689C2CDE8ACC00C0D399 /* classmate.png in Resources */,
-				F44383FE2D77B88D0032C7AE /* player_idle.png in Resources */,
-				F459FCEE2D56C3B700A548A2 /* dirt.png in Resources */,
-				F459FCEC2D56C3AC00A548A2 /* water.png in Resources */,
+				F480E74B2D9B50750037E26C /* map.map in Resources */,
+				F480E7492D9B50690037E26C /* terrain_ss.png in Resources */,
 				F44384002D7A53020032C7AE /* player_anims.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

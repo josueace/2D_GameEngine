@@ -27,7 +27,9 @@ void Map::LoadMap(std::string path, int sizeX, int sizeY) {
 
     std::fstream mapFile;
     cout << "current dir: " << std::filesystem::current_path() << "\n";
-    mapFile.open("p16x16.map");
+    mapFile.open("map.map");
+    
+    int srcX, srcY;
     std::cout <<path << "\n";
     if(!mapFile.is_open()){
         std::cout << "error open file\n";
@@ -38,11 +40,16 @@ void Map::LoadMap(std::string path, int sizeX, int sizeY) {
 
     for (int y = 0; y < sizeY; y++) {
         for (int x = 0; x < sizeX; x++) {
-            char tile;
-            mapFile.get(tile);
-            cout << x << "," << y << " : " << tile <<  "\n";
+            char c;
+            mapFile.get(c);
             
-            Game::AddTile(tile - '0', 32 * x, 32 * y);
+            srcY = atoi(&c)*32;
+            mapFile.get(c);
+            
+            srcX = atoi(&c)*32;
+            
+            
+            Game::AddTile(srcX,srcY,x*32,y*32);
             mapFile.ignore();
         }
     }
