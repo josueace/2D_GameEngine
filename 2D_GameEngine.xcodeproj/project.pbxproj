@@ -17,6 +17,7 @@
 		F44384002D7A53020032C7AE /* player_anims.png in Resources */ = {isa = PBXBuildFile; fileRef = F44383FF2D7A53020032C7AE /* player_anims.png */; };
 		F480E7492D9B50690037E26C /* terrain_ss.png in Resources */ = {isa = PBXBuildFile; fileRef = F480E7482D9B50690037E26C /* terrain_ss.png */; };
 		F480E74B2D9B50750037E26C /* map.map in Resources */ = {isa = PBXBuildFile; fileRef = F480E74A2D9B50740037E26C /* map.map */; };
+		F480E74D2DAAE2420037E26C /* hammocks.map in Resources */ = {isa = PBXBuildFile; fileRef = F480E74C2DAAE2420037E26C /* hammocks.map */; };
 		F4944A192D498BD800D654E0 /* ECS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4944A182D498BD800D654E0 /* ECS.cpp */; };
 		F4F068912CCAEB9200C0D399 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F0688F2CCAEB3800C0D399 /* SDL2_image.framework */; };
 		F4F068922CCAEB9200C0D399 /* SDL2_image.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4F0688F2CCAEB3800C0D399 /* SDL2_image.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -75,6 +76,7 @@
 		F44384012D7A535A0032C7AE /* Animation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animation.h; sourceTree = "<group>"; };
 		F480E7482D9B50690037E26C /* terrain_ss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = terrain_ss.png; sourceTree = "<group>"; };
 		F480E74A2D9B50740037E26C /* map.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = map.map; sourceTree = "<group>"; };
+		F480E74C2DAAE2420037E26C /* hammocks.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = hammocks.map; sourceTree = "<group>"; };
 		F4944A182D498BD800D654E0 /* ECS.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ECS.cpp; sourceTree = "<group>"; };
 		F4F0688C2CC8CCB600C0D399 /* SDL_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDL_image.h; sourceTree = "<group>"; };
 		F4F0688F2CCAEB3800C0D399 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 		F4F0688B2CC8C7D900C0D399 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F480E74C2DAAE2420037E26C /* hammocks.map */,
 				F480E74A2D9B50740037E26C /* map.map */,
 				F480E7482D9B50690037E26C /* terrain_ss.png */,
 				F44383FF2D7A53020032C7AE /* player_anims.png */,
@@ -343,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F480E74B2D9B50750037E26C /* map.map in Resources */,
+				F480E74D2DAAE2420037E26C /* hammocks.map in Resources */,
 				F480E7492D9B50690037E26C /* terrain_ss.png in Resources */,
 				F44384002D7A53020032C7AE /* player_anims.png in Resources */,
 			);

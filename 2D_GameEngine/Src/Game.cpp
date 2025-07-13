@@ -71,7 +71,7 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height, bo
     
     map = new Map();
     
-    Map::LoadMap("map.map",10,10);
+    Map::LoadMap("hammocks.map",10,10);
     
     player.addComponent<TransformComponent>(2);
     player.addComponent<SpriteComponent>("player_anims.png",true);
